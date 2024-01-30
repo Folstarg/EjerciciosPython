@@ -40,3 +40,83 @@
 # vocal=input("Ingrese una vocal :" )
 # fraseConVocal=frase.replace(vocal, vocal.upper())
 # print(fraseConVocal)
+
+# Escribir un programa que pregunte el correo electrónico del usuario en la consola y muestre por pantalla otro correo electrónico con el mismo nombre (la parte delante de la arroba @) pero con dominio ceu.es.
+
+# mail=input("Ingrese el email :" )
+# mailPiola=mail.split("@")
+# mailPiola=mailPiola[0]+"@ceu.es"
+# print(mailPiola)
+
+# Escribir un programa que pregunte por consola el precio de un producto en euros con dos decimales y muestre por pantalla el número de euros y el número de céntimos del precio introducido.
+
+# precio=input("Ingrese el precio del producto en euros :" )
+# precioEu=precio.split(".")
+# precioEuEntero=precioEu[0]
+# precioEuDecimales=precioEu[1]
+# print(f"El numero entero es : {precioEuEntero} y el numero de céntimos es {precioEuDecimales}" )
+
+# Escribir un programa que pregunte al usuario la fecha de su nacimiento en formato dd/mm/aaaa y muestra por pantalla, el día, el mes y el año. Adaptar el programa anterior para que también funcione cuando el día o el mes se introduzcan con un solo carácter.
+
+# fecha=input("Ingrese la fecha de su nacimiento en formato dd/mm/aaaa :" )
+# fechaNacimiento=fecha.split("/")
+# fechaDia=fechaNacimiento[0]
+# fechaMes=fechaNacimiento[1]
+# fechaAnio=fechaNacimiento[2]
+# print(f"dia {fechaDia}, mes {fechaMes} y año {fechaAnio}") 
+
+# Escribir un programa que pregunte por consola por los productos de una cesta de la compra, separados por comas
+# , y muestre por pantalla cada uno de los productos en una línea distinta.
+
+# productos=input("Ingrese los productos de la cesta de compra separados por comas :" ) #arroz,queso,
+# prodcutosEnCesta=productos.split(",")
+# for i in prodcutosEnCesta:
+#     print(i)
+
+# Escribir un programa que pregunte el nombre el un producto, su precio y un número de unidades
+#  y muestre por pantalla una cadena con el nombre del producto seguido de su precio unitario con 6 dígitos enteros y 2 decimales, el número de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales.
+
+nombre=input("Ingrese el nombre del producto :" )
+precio=input("Ingrese el precio del producto :" )
+unidades=input("ingrese la cantidad de unidades del producto :" )
+cantidadDeCerosASumar="" 
+precioEntero=precio.split(".")
+cerosFaltantes=6-len(precioEntero[0])
+
+for i in range(cerosFaltantes):
+   cantidadDeCerosASumar=cantidadDeCerosASumar+"0"
+
+preciounitario=cantidadDeCerosASumar+precio #22
+print(preciounitario)
+
+unidadesDeCerosASumar=""
+unidades3Digitos=3-len(unidades)
+for i in range(unidades3Digitos):
+   unidadesDeCerosASumar=unidadesDeCerosASumar+"0"
+
+unidades3Digitos=unidadesDeCerosASumar+unidades   
+print(unidades3Digitos)
+
+precioEnNumero=float(precio)
+unidadesEnNumero=int(unidades)
+costeTotal=precioEnNumero*unidadesEnNumero
+costeTotal=str(costeTotal)
+
+costeTotalCeros=""
+costeTotalConEnteros=costeTotal.split(".")
+cerosFaltantesEnCosteTotal=8-len(costeTotalConEnteros[0])
+for i in range(cerosFaltantesEnCosteTotal):
+    costeTotalCeros=costeTotalCeros+"0"
+costeTotal=costeTotalCeros+costeTotal
+print(costeTotal)
+
+
+
+   
+
+   
+
+# producto = input('Introduce el nombre del producto: ')
+# precio = float(input('Introducde el precio unitario: '))
+# unidades = int(input('Introduce el número de unidades: '))
+# print('{producto}: {unidades:3d} unidades x {precio:9.2f}€ = {total:11.2f}€'.format(producto = producto, unidades = unidades, precio = precio, total = unidades * precio))
