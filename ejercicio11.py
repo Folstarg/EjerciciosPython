@@ -91,3 +91,47 @@
 #     print( cadena )
 #     numero=numero+2
 
+# Escribir un programa que almacene la cadena de caracteres 'contraseña' en una variable, pregunte al usuario por la contraseña hasta que introduzca la contraseña correcta.
+
+# contraseniaCorrecta="contraseña"
+# contrasenia=""
+# while contrasenia != contraseniaCorrecta:
+#     contrasenia = input("Introduce la contraseña: ")
+# print("Contraseña correcta")
+
+
+# Escribir un programa que pida al usuario un número entero y muestre por pantalla si es un número primo o no.
+
+# n = int(input("Introduce un número entero positivo mayor que 2: "))
+# i = 2
+# while n % i != 0:
+#    i  += 1  #Esto es asi porque es igual que decir : i = i+1
+# if i == n:
+#     print(str(n) + " es primo")
+# else:
+#     print(str(n) + " no es primo")
+
+# # Solucion 2.
+    
+# n = int(input("Introduce un número entero positivo mayor que 2: "))
+# for i in range(2, n):
+#     if n % i == 0:
+#         break  #Esto se usa para romper el for y salir.
+# if (i + 1)  == n:
+#     print(str(n) + " es primo")
+# else: 
+#     print(str(n) + " no es primo")
+
+
+# Escribir un programa que pida al usuario una palabra y luego muestre por pantalla una a una las letras de la palabra introducida empezando por la última.
+
+# palabra=input("Ingrese una palabra : " )
+# contador=0
+# largoPalabra=len(palabra)-1
+# for i in palabra:
+#     palabra[0]
+#     print(palabra[largoPalabra-contador])
+#     contador+=1
+
+
+# Escribir un programa en el que se pregunte al usuario por una frase y una letra, y muestre por pantalla el número de veces que aparece la letra en la frase.

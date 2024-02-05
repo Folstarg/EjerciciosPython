@@ -68,47 +68,47 @@
 # Escribir un programa que pregunte por consola por los productos de una cesta de la compra, separados por comas
 # , y muestre por pantalla cada uno de los productos en una línea distinta.
 
-# productos=input("Ingrese los productos de la cesta de compra separados por comas :" ) #arroz,queso,
-# prodcutosEnCesta=productos.split(",")
-# for i in prodcutosEnCesta:
-#     print(i)
+productos=input("Ingrese los productos de la cesta de compra separados por comas :" ) #arroz,queso,
+prodcutosEnCesta=productos.split(",")
+for i in prodcutosEnCesta:
+    print(i)
 
 # Escribir un programa que pregunte el nombre el un producto, su precio y un número de unidades
 #  y muestre por pantalla una cadena con el nombre del producto seguido de su precio unitario con 6 dígitos enteros y 2 decimales, el número de unidades con tres dígitos y el coste total con 8 dígitos enteros y 2 decimales.
 
-nombre=input("Ingrese el nombre del producto :" )
-precio=input("Ingrese el precio del producto :" )
-unidades=input("ingrese la cantidad de unidades del producto :" )
-cantidadDeCerosASumar="" 
-precioEntero=precio.split(".")
-cerosFaltantes=6-len(precioEntero[0])
+# nombre=input("Ingrese el nombre del producto :" )
+# precio=input("Ingrese el precio del producto :" )
+# unidades=input("ingrese la cantidad de unidades del producto :" )
+# cantidadDeCerosASumar="" 
+# precioEntero=precio.split(".")
+# cerosFaltantes=6-len(precioEntero[0])
 
-for i in range(cerosFaltantes):
-   cantidadDeCerosASumar=cantidadDeCerosASumar+"0"
+# for i in range(cerosFaltantes):
+#    cantidadDeCerosASumar=cantidadDeCerosASumar+"0"
 
-preciounitario=cantidadDeCerosASumar+precio #22
-print(preciounitario)
+# preciounitario=cantidadDeCerosASumar+precio #22
+# print(preciounitario)
 
-unidadesDeCerosASumar=""
-unidades3Digitos=3-len(unidades)
-for i in range(unidades3Digitos):
-   unidadesDeCerosASumar=unidadesDeCerosASumar+"0"
+# unidadesDeCerosASumar=""
+# unidades3Digitos=3-len(unidades)
+# for i in range(unidades3Digitos):
+#    unidadesDeCerosASumar=unidadesDeCerosASumar+"0"
 
-unidades3Digitos=unidadesDeCerosASumar+unidades   
-print(unidades3Digitos)
+# unidades3Digitos=unidadesDeCerosASumar+unidades   
+# print(unidades3Digitos)
 
-precioEnNumero=float(precio)
-unidadesEnNumero=int(unidades)
-costeTotal=precioEnNumero*unidadesEnNumero
-costeTotal=str(costeTotal)
+# precioEnNumero=float(precio)
+# unidadesEnNumero=int(unidades)
+# costeTotal=precioEnNumero*unidadesEnNumero
+# costeTotal=str(costeTotal)
 
-costeTotalCeros=""
-costeTotalConEnteros=costeTotal.split(".")
-cerosFaltantesEnCosteTotal=8-len(costeTotalConEnteros[0])
-for i in range(cerosFaltantesEnCosteTotal):
-    costeTotalCeros=costeTotalCeros+"0"
-costeTotal=costeTotalCeros+costeTotal
-print(costeTotal)
+# costeTotalCeros=""
+# costeTotalConEnteros=costeTotal.split(".")
+# cerosFaltantesEnCosteTotal=8-len(costeTotalConEnteros[0])
+# for i in range(cerosFaltantesEnCosteTotal):
+#     costeTotalCeros=costeTotalCeros+"0"
+# costeTotal=costeTotalCeros+costeTotal
+# print(costeTotal)
 
 
    
